@@ -1,0 +1,16 @@
+<article class="{{post_class}} post-card">
+    <header>
+        <h2>
+            <a href="{{url}}">{{title}}</a>
+        </h2>
+    </header>
+    <section class="post-excerpt">
+        <p>{{excerpt words="26"}}
+            <a class="read-more" href="{{url}}">...</a>
+        </p>
+    </section>
+    <footer class="post-meta">
+        {{tags separator=" "}}
+        <time pubdate="pubdate" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="D MMMM YYYY"}}</time>
+    </footer>
+</article>

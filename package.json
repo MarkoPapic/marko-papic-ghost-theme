@@ -1,12 +1,10 @@
 {
     "name": "marko-papic",
     "description": "Theme used for Marko Papic blog.",
-    //"demo": "some url where it will be displayed",
     "version": "0.0.1",
     "engines": {
         "ghost": ">=1.17.0"
     },
-    //"license": "MIT",
     "author": {
         "name": "Marko Papic",
         "email": "marko@markopapic.com",

@@ -1,0 +1,31 @@
+{{!< default}}
+
+{{#post}}
+
+<main>
+    <article class="{{post_class}} post-full {{#unless feature_image}}no-image{{/unless}}">
+        <header>
+            <h1>{{title}}</h1>
+            <section class="post-meta">
+                <div>
+                    <time pubdate="pubdate" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="D MMMM YYYY"}}</time>
+                </div>
+                {{tags separator=" "}}
+            </section>
+        </header>
+        {{#if feature_image}}
+            <figure style="background-image: url({{feature_image}})">
+            </figure>
+        {{/if}}
+        <section class="post-content">
+            {{content}}
+        </section>
+        <footer>
+            <p>
+                <small>Maybe some licence or something else here</small>
+            </p>
+        </footer>
+    </article>
+</main>
+
+{{/post}}
