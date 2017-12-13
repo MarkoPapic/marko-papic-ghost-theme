@@ -1,27 +1,35 @@
 .site-header {
+    text-align: center;
+}
+
+.site-header.with-cover {
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 35vh;
     padding-top: 6vh;
-    text-align: center;
+}
+
+.site-header.with-cover .site-title {
+    text-shadow: 0 0 15px #3C3C3C;
 }
 
 
 .site-header.no-cover {
-    background-color: var(--primary-color);
+    background-color: $primary-color;
     padding-top: 2vh;
 }
 
 .site-logo {
-    width: calc(50px + 4vw);
+    width: calc(30px + 3vw);
     height: auto;
     border-radius: 50%;
 }
 
 .site-title {
-
+    color: #fff;
+    font-size: 2em;
 }
 
 .site-description {
-    
+    color: #ccc;
 }

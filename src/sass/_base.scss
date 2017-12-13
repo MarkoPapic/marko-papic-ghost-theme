@@ -7,6 +7,14 @@ $secondary-color: #333;
 $text-color: #818181;
 $accent-color: #22b3eb;
 
+/* Fonts */
+$font-size-base: calc(8px + 0.5vh + 0.5vw);
+$font-family-base: Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+/* Media queries breakpoints */
+$breakpoint-phone: 420px;
+$breakpoint-tablet: 768px;
+
 /* Reset
 /* ---------------------------------------------------------- */
 
@@ -93,4 +101,15 @@ video {
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
+}
+
+/*----------------------------------------------------
+    Styles
+----------------------------------------------------*/
+
+body {
+	background-color: $secondary-color;
+	color: $text-color;
+	font-size: $font-size-base;
+	font-family: $font-family-base;
 }

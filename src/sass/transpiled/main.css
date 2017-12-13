@@ -1,6 +1,8 @@
 /* Variables
 /* ---------------------------------------------------------- */
 /* Colors */
+/* Fonts */
+/* Media queries breakpoints */
 /* Reset
 /* ---------------------------------------------------------- */
 html,
@@ -87,18 +89,39 @@ video {
   font-size: 100%;
   vertical-align: baseline; }
 
+/*----------------------------------------------------
+    Styles
+----------------------------------------------------*/
+body {
+  background-color: #333;
+  color: #818181;
+  font-size: calc(8px + 0.5vh + 0.5vw);
+  font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .site-header {
+  text-align: center; }
+
+.site-header.with-cover {
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 35vh;
-  padding-top: 6vh;
-  text-align: center; }
+  padding-top: 6vh; }
+
+.site-header.with-cover .site-title {
+  text-shadow: 0 0 15px #3C3C3C; }
 
 .site-header.no-cover {
-  background-color: var(--primary-color);
+  background-color: #444;
   padding-top: 2vh; }
 
 .site-logo {
-  width: calc(50px + 4vw);
+  width: calc(30px + 3vw);
   height: auto;
   border-radius: 50%; }
+
+.site-title {
+  color: #fff;
+  font-size: 2em; }
+
+.site-description {
+  color: #ccc; }
