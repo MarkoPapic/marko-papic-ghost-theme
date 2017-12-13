@@ -1,0 +1,27 @@
+.site-header {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 35vh;
+    padding-top: 6vh;
+    text-align: center;
+}
+
+
+.site-header.no-cover {
+    background-color: var(--primary-color);
+    padding-top: 2vh;
+}
+
+.site-logo {
+    width: calc(50px + 4vw);
+    height: auto;
+    border-radius: 50%;
+}
+
+.site-title {
+
+}
+
+.site-description {
+    
+}
