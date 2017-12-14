@@ -4,11 +4,12 @@
 /* Colors */
 $primary-color: #3d3d3d;
 $secondary-color: #333;
-$text-color: #818181;
 $accent-color: #22b3eb;
+$text-color: #818181;
+$highlight-color: #fff;
 
 /* Fonts */
-$font-size-base: calc(8px + 0.5vh + 0.5vw);
+$font-size-base: calc(14px + 0.5vw);
 $font-family-base: Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /* Media queries breakpoints */
@@ -99,7 +100,6 @@ video {
     padding: 0;
     border: 0;
     font: inherit;
-    font-size: 100%;
     vertical-align: baseline;
 }
 
@@ -112,4 +112,9 @@ body {
 	color: $text-color;
 	font-size: $font-size-base;
 	font-family: $font-family-base;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
