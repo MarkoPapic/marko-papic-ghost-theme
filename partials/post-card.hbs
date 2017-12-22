@@ -1,16 +1,24 @@
-<article class="{{post_class}} post-card">
+<article class="{{post_class}} post-card"> <!--{{#unless feature_image}} no-image{{/unless}}-->
     <header>
-        <h2>
-            <a href="{{url}}">{{title}}</a>
-        </h2>
+        <div class="post-card-header-background{{#if feature_image}} with-image" style="background-image: url({{feature_image}})"{{/if}}>
+            <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
+        </div>
     </header>
-    <section class="post-excerpt">
-        <p>{{excerpt words="26"}}
-            <a class="read-more" href="{{url}}">...</a>
-        </p>
-    </section>
-    <footer class="post-meta">
-        {{tags separator=" "}}
-        <time pubdate="pubdate" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="D MMMM YYYY"}}</time>
-    </footer>
+        <time class="published-date" pubdate="pubdate" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="D MMMM YYYY"}}</time>
+        <section class="post-excerpt">
+            <p>{{excerpt words="70"}}
+                <a class="read-more" href="{{url}}">...</a>
+            </p>
+        </section>
+        <footer class="post-meta">
+            {{#if tags}}
+                <ul class="post-tags-list">
+                    {{#foreach tags}}
+                        <li>
+                            <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+                        </li>  
+                    {{/foreach}}
+                </ul>
+            {{/if}}
+        </footer>
 </article>

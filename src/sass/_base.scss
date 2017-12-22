@@ -7,6 +7,7 @@ $secondary-color: #333;
 $accent-color: #22b3eb;
 $text-color: #818181;
 $highlight-color: #fff;
+$post-background-color: #fff;
 
 /* Fonts */
 $font-size-base: calc(14px + 0.5vw);
@@ -117,4 +118,8 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }

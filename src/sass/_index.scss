@@ -87,6 +87,12 @@
     color: $accent-color;
 }
 
+.post-feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 @media screen and (max-width: $breakpoint-phone) {
 	#navigation-menu-button {
 		display:inline-block;

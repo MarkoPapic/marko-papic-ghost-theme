@@ -101,6 +101,9 @@ a {
   color: inherit;
   text-decoration: none; }
 
+ul {
+  list-style-type: none; }
+
 .site-header {
   text-align: center; }
 
@@ -173,6 +176,15 @@ a {
 .nav-link:hover {
   color: #22b3eb; }
 
+.post-feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 @media screen and (max-width: 420px) {
   #navigation-menu-button {
     display: inline-block; }
@@ -182,4 +194,54 @@ a {
     padding: 0 2vw; }
   .nav .nav-menu-item {
     display: block;
-    margin: 1vh 0; } }
+    margin: 2vh 0; } }
+
+.post-card {
+  width: 40%;
+  background-color: #fff;
+  margin-top: calc(10px + 8vh); }
+
+.post-card .post-title {
+  position: absolute;
+  bottom: 0;
+  background-color: #22b3eb;
+  color: #fff;
+  width: 75%;
+  padding: calc(4px + 0.5vw);
+  font-size: 1.3em;
+  font-weight: bold; }
+
+.post-card-header-background {
+  height: 30vh;
+  min-height: 150px;
+  position: relative; }
+
+.post-card .post-excerpt {
+  padding: calc(4px + 1vw); }
+
+.post-card .published-date {
+  color: #ccc;
+  padding-left: calc(4px + 0.5vw);
+  padding-top: 0.5vh;
+  display: inline-block;
+  font-size: 0.9em; }
+
+.post-card .post-tags-list li {
+  display: inline-block;
+  background-color: #ccc;
+  line-height: 0.9; }
+
+.post-card .post-tags-list a {
+  line-height: 1;
+  color: #fff;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: lighter; }
+
+@media screen and (max-width: 768px) {
+  .post-card {
+    width: 95%; } }

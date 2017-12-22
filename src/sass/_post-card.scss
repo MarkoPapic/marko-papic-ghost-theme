@@ -1,0 +1,62 @@
+.post-card {
+    width: 40%;
+    background-color: $post-background-color;
+    margin-top: calc(10px + 8vh);
+}
+
+.post-card .post-title {
+    position: absolute;
+    bottom: 0;
+    background-color: $accent-color;
+    color: $highlight-color;
+    width: 75%;
+    padding: calc(4px + 0.5vw);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.post-card-header-background {
+    height: 30vh;
+    min-height: 150px;
+    position: relative;
+}
+
+.post-card .post-excerpt {
+    padding: calc(4px + 1vw);
+}
+
+.post-card .published-date {
+    color: #ccc;
+    padding-left: calc(4px + 0.5vw);
+    padding-top: 0.5vh;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+.post-card .post-tags-list li {
+    display: inline-block;
+    background-color: #ccc;
+    line-height: 0.9;
+}
+
+.post-card .post-tags-list a {
+    line-height: 1;
+    color: $highlight-color;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+.post-card .post-meta {
+    padding: 0 1vw 2vh 1vw;
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+	.post-card {
+        width: 95%;
+    }
+}

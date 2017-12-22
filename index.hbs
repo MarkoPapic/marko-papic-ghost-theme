@@ -17,9 +17,11 @@
 </header>
 
 <main>
-    {{#foreach posts}}
-        {{> "post-card"}}
-    {{/foreach}}
+    <div class="post-feed">
+        {{#foreach posts}}
+            {{> "post-card"}}
+        {{/foreach}}
+    </div>
 </main>
 
 <footer>Something here</footer>
