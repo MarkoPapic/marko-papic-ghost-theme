@@ -3,29 +3,46 @@
 {{#post}}
 
 <main>
-    <article class="{{post_class}} post-full {{#unless feature_image}}no-image{{/unless}}">
-        <header>
-            <h1>{{title}}</h1>
-            <section class="post-meta">
-                <div>
-                    <time pubdate="pubdate" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="D MMMM YYYY"}}</time>
-                </div>
-                {{tags separator=" "}}
-            </section>
-        </header>
-        {{#if feature_image}}
-            <figure style="background-image: url({{feature_image}})">
-            </figure>
+    <header class="site-header {{#if @blog.cover_image}} with-cover" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+        <nav class="site-navigation">
+        {{#if @blog.navigation}}
+            <button id="navigation-menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><div class="hamburger-button"><div></div><div></div><div></div></div></button>
         {{/if}}
+        {{navigation}}
+    </nav>
+    </header>
+
+    <article class="{{post_class}} post-full">
+        <header>
+            <div class="post-header-background{{#if feature_image}} with-image" style="background-image: url({{feature_image}}){{/if}}">
+                <h1 class="post-title">{{title}}</h1>
+            </div>
+        </header>
+        <section class="post-meta">
+            <div>
+                <time pubdate="pubdate" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="D MMMM YYYY"}}</time>
+            </div>
+        </section>
         <section class="post-content">
             {{content}}
         </section>
-        <footer>
-            <p>
-                <small>Maybe some licence or something else here</small>
-            </p>
+        <footer class="post-footer">
+            {{#if tags}}
+                <ul class="post-tags-list">
+                    {{#foreach tags}}
+                        <li>
+                            <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+                        </li>  
+                    {{/foreach}}
+                </ul>
+            {{/if}}
+            <div>Share icons</div>
         </footer>
     </article>
 </main>
 
 {{/post}}
+
+{{#contentFor "scripts"}}
+<script src="{{asset "js/navigation-menu-toggle.js"}}"></script>
+{{/contentFor}}

@@ -1,7 +1,77 @@
-.no-image{}
 .post-excerpt {}
-.post-meta {}
+
 .read-more {}
-.post-card {}
-.post-full {}
-.post-content {}
+
+.post-template .site-header {
+    padding-top: 0;
+}
+
+.post-full {
+    background-color: $post-background-color;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(5vh + 2vw);
+}
+
+.post-content {
+    padding: 3vw 5vw;
+}
+
+.post-header-background {
+    position: relative;
+    height: calc(15vh + 3vw);
+}
+
+.post-header-background.with-image {
+    height: calc(15vw + 15vh);
+}
+
+.post-full .post-title {
+    position: absolute;
+    bottom: 0;
+    background-color: $accent-color;
+    color: $highlight-color;
+    width: 75%;
+    padding: calc(4px + 2vw);
+    font-size: 1.7em;
+}
+
+.post-meta {
+    color: #ccc;
+    padding-left: calc(4px + 2vw);
+    padding-top: calc(5px + 1vh);
+}
+
+.post-tags-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-full .post-tags-list li {
+    display: inline-block;
+    background-color: #ccc;
+    line-height: 0.9;
+}
+
+.post-full .post-tags-list a {
+    line-height: 1;
+    color: $highlight-color;
+    padding: 4px 8px;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+.post-full .post-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(5px + 1vh) calc(4px + 2vw);
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+	.post-full {
+        width: 100%;
+    }
+}
