@@ -227,7 +227,8 @@ a {
   height: calc(15vh + 3vw); }
 
 .post-header-background.with-image {
-  height: calc(15vw + 15vh); }
+  height: calc(15vw + 15vh);
+  background-size: 100% auto; }
 
 .post-full .post-title {
   position: absolute;
@@ -292,7 +293,8 @@ a {
 .post-card-header-background {
   height: 30vh;
   min-height: 150px;
-  position: relative; }
+  position: relative;
+  background-size: 100% auto; }
 
 .post-card .post-excerpt {
   padding: calc(4px + 1vw); }
