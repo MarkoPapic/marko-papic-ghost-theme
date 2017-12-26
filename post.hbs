@@ -2,16 +2,15 @@
 
 {{#post}}
 
-<main>
-    <header class="site-header {{#if @blog.cover_image}} with-cover" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+<header class="site-header {{#if @blog.cover_image}} with-cover" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
         <nav class="site-navigation">
-        {{#if @blog.navigation}}
-            <button id="navigation-menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><div class="hamburger-button"><div></div><div></div><div></div></div></button>
-        {{/if}}
-        {{navigation}}
-    </nav>
-    </header>
-
+            {{#if @blog.navigation}}
+                <button id="navigation-menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><div class="hamburger-button"><div></div><div></div><div></div></div></button>
+            {{/if}}
+            {{navigation}}
+        </nav>
+</header>
+<main>
     <article class="{{post_class}} post-full">
         <header>
             <div class="post-header-background{{#if feature_image}} with-image" style="background-image: url({{feature_image}}){{/if}}">
@@ -40,6 +39,9 @@
         </footer>
     </article>
 </main>
+<footer class="site-footer">
+    <div class="footer-copyright">&copy; <span class="footer-site-title">{{@blog.title}}</span> all rights reserved.</div>
+</footer>
 
 {{/post}}
 

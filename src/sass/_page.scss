@@ -1,0 +1,18 @@
+.page-full {
+    background-color: $post-background-color;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(5vh + 2vw);
+    overflow: auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 4vh 0;
+}
+
+.page-content {
+    padding: 3vw 5vw;
+}
