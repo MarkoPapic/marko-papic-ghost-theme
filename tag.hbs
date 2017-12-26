@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{#tag}}
+
+<header class="site-header {{#if @blog.cover_image}} with-cover" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+    <nav class="site-navigation">
+        {{#if @blog.navigation}}
+            <button id="navigation-menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><div class="hamburger-button"><div></div><div></div><div></div></div></button>
+        {{/if}}
+        {{navigation}}
+    </nav>
+</header>
+
+<section class="tag-data">
+    <h1 class="tag-title">{{name}}</h1>
+    {{#if description}}
+      <h2>{{description}}</h2>
+    {{/if}}
+</section>
+
+{{/tag}}
+
+<main>
+    <div class="post-feed">
+        {{#foreach posts}}
+            {{> "post-card"}}
+        {{/foreach}}
+    </div>
+    {{pagination}}
+</main>

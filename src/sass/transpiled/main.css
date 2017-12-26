@@ -344,7 +344,7 @@ pre {
 
 .page-title {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.7em;
   margin: 4vh 0; }
 
 .page-content {
@@ -374,3 +374,14 @@ pre {
 
 .pagination-link.disabled {
   color: #333; }
+
+.tag-template .site-header {
+  padding-top: 0; }
+
+.tag-data {
+  text-align: center;
+  margin-top: 6vh; }
+
+.tag-title {
+  font-size: 1.5em;
+  color: #22b3eb; }
