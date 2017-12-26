@@ -38,6 +38,20 @@
     font-size: 1.7em;
 }
 
+.post-content pre {
+    overflow-x: auto;
+    word-wrap: normal;
+    hyphens: none;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    padding: 2vw;
+}
+
+.post-content pre code, pre tt {
+    white-space: pre;
+    padding: 2vw;
+}
+
 .post-meta {
     color: #ccc;
     padding-left: calc(4px + 2vw);
