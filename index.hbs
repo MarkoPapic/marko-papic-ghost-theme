@@ -28,6 +28,18 @@
     {{pagination}}
 </main>
 
+{{#if @labs.subscribers}}
+    <section class="subscribe-section-inline">
+        <h3>Subscribe to Newsletter</h3>
+        {{subscribe_form
+            form_class="subscribe-form-inline"
+            input_class="subscribe-input"
+            button_class="btn subscribe-btn"
+            placeholder="Your email address"
+            autofocus="false"
+        }}
+    </section>
+{{/if}}
 
 <footer class="site-footer">
     <div class="footer-contact">

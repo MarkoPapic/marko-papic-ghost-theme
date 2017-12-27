@@ -1,0 +1,57 @@
+.subscribe-section {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.subscribe-section h1 {
+    color: #ddd;
+    font-size: 1.3em;
+    margin-bottom: 3vh;
+}
+
+.subscribe-section-inline {
+    text-align: center;
+    padding: 3vh 2vw;
+}
+
+.subscribe-section-inline h3 {
+    color: #ddd;
+    font-size: 1.3em;
+    margin-bottom: calc(15px + 0.5vh);
+}
+
+.subscribe-form {
+
+}
+
+.subscribe-form .subscribe-input {
+    font-size: 1em;
+    padding: calc(0.2vh + 0.2vw);
+    margin: 1vh 0;
+}
+
+.subscribe-btn {
+    background-color: $accent-color;
+}
+
+.subscribe-form-inline {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-form-inline .subscribe-input {
+    font-size: 0.9em;
+    margin: 0 1vw;
+}
+
+.subscribe-form-inline .subscribe-btn {
+    font-size: 0.9em;
+}
+
+.subscribe-back-btn {
+    margin-left: 3vw;
+}
+
+.subscribe-back-btn:hover {
+    color: $highlight-color;
+}

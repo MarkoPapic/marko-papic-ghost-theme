@@ -102,6 +102,25 @@ a {
   color: inherit;
   text-decoration: none; }
 
+.btn {
+  color: white;
+  background-color: #333;
+  display: inline-block;
+  padding: 0.8vh 0.8vw;
+  /*border-radius: calc(2px + 0.1vw);*/
+  line-height: 1;
+  vertical-align: top;
+  font-size: 1em;
+  font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer; }
+
+button, input[type="submit"] {
+  font-size: 1em;
+  border: none; }
+
+.btn:focus {
+  outline: none; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2426,6 +2445,53 @@ a {
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+.subscribe-section {
+  text-align: center;
+  margin-top: 20vh; }
+
+.subscribe-section h1 {
+  color: #ddd;
+  font-size: 1.3em;
+  margin-bottom: 3vh; }
+
+.subscribe-section-inline {
+  text-align: center;
+  padding: 3vh 2vw; }
+
+.subscribe-section-inline h3 {
+  color: #ddd;
+  font-size: 1.3em;
+  margin-bottom: calc(15px + 0.5vh); }
+
+.subscribe-form .subscribe-input {
+  font-size: 1em;
+  padding: calc(0.2vh + 0.2vw);
+  margin: 1vh 0; }
+
+.subscribe-btn {
+  background-color: #22b3eb; }
+
+.subscribe-form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.subscribe-form-inline .subscribe-input {
+  font-size: 0.9em;
+  margin: 0 1vw; }
+
+.subscribe-form-inline .subscribe-btn {
+  font-size: 0.9em; }
+
+.subscribe-back-btn {
+  margin-left: 3vw; }
+
+.subscribe-back-btn:hover {
+  color: #fff; }
 
 .site-header {
   text-align: center; }

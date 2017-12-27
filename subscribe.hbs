@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+    <title>{{@blog.title}} - Subscribe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+</head>
+<body>
+        <main>
+            <header>
+                <nav>
+                    <a href="{{#if subscribed_url}}{{subscribed_url}}{{else}}{{@blog.url}}{{/if}}" class="subscribe-back-btn">&lt; Back</a>
+                </nav>
+            </header>
+
+            <section class="subscribe-section">
+                {{^if success}}
+                    <header>
+                        <h1>Subscribe to {{@blog.title}} newsletter</h1>
+                    </header>
+
+                    {{subscribe_form
+                        form_class="subscribe-form"
+                        input_class="subscribe-input"
+                        button_class="btn subscribe-btn"
+                        placeholder="Your email address"
+                        autofocus="false"
+                    }}
+                {{else}}
+                    <header>
+                        <h1>Subscribed!</h1>
+                    </header>
+
+                    <p>
+                        You've successfully subscribed to <em>{{@blog.title}}</em>
+                        with the email address <em>{{email}}</em>.
+                    </p>
+                {{/if}}
+            </section>
+        </main>
+</body>
+</html>
