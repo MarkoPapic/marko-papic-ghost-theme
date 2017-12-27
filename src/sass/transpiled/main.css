@@ -183,8 +183,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
 
 .site-footer {
   background-color: #3d3d3d;
@@ -245,7 +246,7 @@ a {
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.3em;
   padding: 2vw; }
 
