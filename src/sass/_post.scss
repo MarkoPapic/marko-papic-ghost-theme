@@ -38,6 +38,12 @@
     font-size: 1.7em;
 }
 
+/*prevent author inserted images to break page layout*/
+.post-content img {
+    max-width: 100%;
+}
+
+/*prevent author inserted code to break page layout*/
 .post-content pre {
     overflow-x: auto;
     word-wrap: normal;
@@ -79,10 +85,43 @@
     font-weight: lighter;
 }
 
+.post-full .share-label {
+    margin-right: 10px;
+}
+
+.post-full .share-link-wrapper {
+    text-align: center;
+    display: inline-block;
+    padding-top: 2px;
+    background-color: #dfdfdf;
+    transition: background-color 0.5s;
+}
+
+.post-full .share-link {
+    display: inline-block;
+    font-size: 0.9em;
+    width: 32px;
+    height: 26px;
+}
+
+.post-full .share-link-wrapper:hover {
+    background-color: $accent-color;
+}
+
+.post-full .share-link-wrapper:hover .share-link {
+    color: #fff;
+}
+
 .post-full .post-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: calc(5px + 1vh) calc(4px + 2vw);
+    padding: calc(5px + 1vh) calc(4px + 1vw);
+}
+
+.post-full .post-footer > * {
+    white-space: nowrap;
+    margin: 1vh calc(10px + 2vw);
 }
 
 @media screen and (max-width: $breakpoint-tablet) {

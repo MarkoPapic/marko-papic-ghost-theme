@@ -35,7 +35,21 @@
                     {{/foreach}}
                 </ul>
             {{/if}}
-            <div>Share icons</div>
+            <div>
+                <span class="share-label">Share:</span>
+                <div class="share-link-wrapper">
+                    <a class="share-link fa fa-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"></a>
+                </div>
+                <div class="share-link-wrapper">
+                    <a class="share-link fa fa-twitter" target="_blank" href="https://twitter.com/intent/tweet?url={{url absolute="true"}}"></a>
+                </div>
+                <div class="share-link-wrapper">
+                    <a class="share-link fa fa-google-plus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"></a>
+                </div>
+                <div class="share-link-wrapper">
+                    <a class="share-link fa fa-linkedin" target="_blank" href="https://www.linkedin.com/shareArticle?url={{url absolute="true"}}&source=LinkedIn"></a>
+                </div>
+            </div>
         </footer>
     </article>
 </main>

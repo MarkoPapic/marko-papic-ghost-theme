@@ -2667,6 +2667,11 @@ button, input[type="submit"] {
   padding: calc(4px + 2vw);
   font-size: 1.7em; }
 
+/*prevent author inserted images to break page layout*/
+.post-content img {
+  max-width: 100%; }
+
+/*prevent author inserted code to break page layout*/
 .post-content pre {
   overflow-x: auto;
   word-wrap: normal;
@@ -2704,14 +2709,43 @@ button, input[type="submit"] {
   font-size: 0.9em;
   font-weight: lighter; }
 
+.post-full .share-label {
+  margin-right: 10px; }
+
+.post-full .share-link-wrapper {
+  text-align: center;
+  display: inline-block;
+  padding-top: 2px;
+  background-color: #dfdfdf;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+.post-full .share-link {
+  display: inline-block;
+  font-size: 0.9em;
+  width: 32px;
+  height: 26px; }
+
+.post-full .share-link-wrapper:hover {
+  background-color: #22b3eb; }
+
+.post-full .share-link-wrapper:hover .share-link {
+  color: #fff; }
+
 .post-full .post-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: calc(5px + 1vh) calc(4px + 2vw); }
+  padding: calc(5px + 1vh) calc(4px + 1vw); }
+
+.post-full .post-footer > * {
+  white-space: nowrap;
+  margin: 1vh calc(10px + 2vw); }
 
 @media screen and (max-width: 768px) {
   .post-full {
