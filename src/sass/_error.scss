@@ -1,0 +1,30 @@
+.error-page-content {
+    background-color: $post-background-color;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(5vh + 2vw);
+    overflow: auto;
+}
+
+.error-message {
+    text-align: center;
+    min-height: 50vh;
+}
+
+.error-code {
+    font-size: 5em;
+    margin: 4vh 0;
+}
+
+.error-description {
+    margin-bottom: 8vh;
+}
+
+.error-link {
+    color: $accent-color;
+}
+
+.error-link:hover {
+    color: #ddd;
+}

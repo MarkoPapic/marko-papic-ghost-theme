@@ -2455,7 +2455,7 @@ a {
   color: #fff; }
 
 .blog-meta {
-  margin-bottom: 4vh; }
+  padding-bottom: 4vh; }
 
 .site-logo {
   width: calc(30px + 3vw);
@@ -2823,3 +2823,28 @@ a {
   background-color: #600;
   display: inline-block;
   width: 100%; }
+
+.error-page-content {
+  background-color: #fff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(5vh + 2vw);
+  overflow: auto; }
+
+.error-message {
+  text-align: center;
+  min-height: 50vh; }
+
+.error-code {
+  font-size: 5em;
+  margin: 4vh 0; }
+
+.error-description {
+  margin-bottom: 8vh; }
+
+.error-link {
+  color: #22b3eb; }
+
+.error-link:hover {
+  color: #ddd; }
