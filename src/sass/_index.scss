@@ -113,6 +113,26 @@
     color: $accent-color;
 }
 
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.footer-contact .contact-link-wrapper {
+    text-align: center;
+}
+
+.footer-contact .contact-link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-contact .contact-link:hover {
+    color: $highlight-color;
+}
+
 @media screen and (max-width: $breakpoint-phone) {
 	#navigation-menu-button {
 		display:inline-block;
