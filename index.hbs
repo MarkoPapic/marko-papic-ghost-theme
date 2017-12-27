@@ -1,15 +1,17 @@
 {{!< default}}
 
-<header class="site-header {{#if @blog.cover_image}} with-cover" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
-    <div class="header-corner-buttons">
-        <a class="fa fa-rss" href="{{@blog.url}}/rss/"></a>
-    </div>
-    <div class="blog-meta">
-        {{#if @blog.logo}}
-            <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-        {{/if}}
-        <h1 class="site-title">{{@blog.title}}</h1>
-        <div class="site-description">{{@blog.description}}</div>
+<header class="site-header">
+    <div class="site-header-background {{#if @blog.cover_image}} with-cover" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+        <div class="header-corner-buttons">
+            <a class="fa fa-rss" href="{{@blog.url}}/rss/"></a>
+        </div>
+        <div class="blog-meta">
+            {{#if @blog.logo}}
+                <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+            {{/if}}
+            <h1 class="site-title">{{@blog.title}}</h1>
+            <div class="site-description">{{@blog.description}}</div>
+        </div>
     </div>
     <nav class="site-navigation">
     {{#if @blog.navigation}}

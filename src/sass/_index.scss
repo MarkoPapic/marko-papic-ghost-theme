@@ -1,21 +1,22 @@
 .site-header {
     text-align: center;
+    background-color: $primary-color;
 }
 
-.site-header.with-cover {
+.site-header-background.with-cover {
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 35vh;
-    padding-top: 6vh;
+    padding-top: 7vh;
+    box-sizing: border-box;
 }
 
-.site-header.with-cover .site-title {
+.site-header-background.with-cover .site-title {
     text-shadow: 0 0 15px #3C3C3C;
 }
 
 
-.site-header.no-cover {
-    background-color: $primary-color;
+.site-header-background.no-cover {
     padding-top: 4vh;
 }
 
@@ -147,6 +148,10 @@
 }
 
 @media screen and (max-width: $breakpoint-phone) {
+    .site-header-background.with-cover {
+        height: 25vh;
+    }
+
 	#navigation-menu-button {
 		display:inline-block;
     }

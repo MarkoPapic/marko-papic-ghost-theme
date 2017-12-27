@@ -2,13 +2,13 @@
 
 {{#post}}
 
-<header class="site-header {{#if @blog.cover_image}} with-cover" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
-        <nav class="site-navigation">
-            {{#if @blog.navigation}}
-                <button id="navigation-menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><div class="hamburger-button"><div></div><div></div><div></div></div></button>
-            {{/if}}
-            {{navigation}}
-        </nav>
+<header class="site-header no-cover">
+    <nav class="site-navigation">
+        {{#if @blog.navigation}}
+            <button id="navigation-menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><div class="hamburger-button"><div></div><div></div><div></div></div></button>
+        {{/if}}
+        {{navigation}}
+    </nav>
 </header>
 <main>
     <article class="{{post_class}} post-full">
