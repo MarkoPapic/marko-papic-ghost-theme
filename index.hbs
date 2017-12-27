@@ -1,6 +1,9 @@
 {{!< default}}
 
 <header class="site-header {{#if @blog.cover_image}} with-cover" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+    <div class="header-corner-buttons">
+        <a class="fa fa-rss" href="{{@blog.url}}/rss/"></a>
+    </div>
     <div class="blog-meta">
         {{#if @blog.logo}}
             <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
@@ -29,22 +32,22 @@
 <footer class="site-footer">
     <div class="footer-contact">
         <div class="contact-link-wrapper">
-            <a class="contact-link fa fa-envelope" aria-hidden="true" href="mailto:marko@markopapic.com" target="_blank"></a>
+            <a class="contact-link fa fa-envelope" href="mailto:marko@markopapic.com" target="_blank"></a>
         </div>
         <div class="contact-link-wrapper">
-            <a class="contact-link fa fa-facebook" aria-hidden="true" href="https://www.facebook.com/papicmarko" target="_blank"></a>
+            <a class="contact-link fa fa-facebook" href="https://www.facebook.com/papicmarko" target="_blank"></a>
         </div>
         <div class="contact-link-wrapper">
-            <a class="contact-link fa fa-twitter" aria-hidden="true" href="https://www.twitter.com/papicmarko" target="_blank"></a>
+            <a class="contact-link fa fa-twitter" href="https://www.twitter.com/papicmarko" target="_blank"></a>
         </div>
         <div class="contact-link-wrapper">
-            <a class="contact-link fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/papicmarko" target="_blank"></a>
+            <a class="contact-link fa fa-linkedin" href="https://www.linkedin.com/in/papicmarko" target="_blank"></a>
         </div>
         <div class="contact-link-wrapper">
-            <a class="contact-link fa fa-skype" aria-hidden="true" href="skype:live:marko_3268?userinfo" target="_blank"></a>
+            <a class="contact-link fa fa-skype" href="skype:live:marko_3268?userinfo" target="_blank"></a>
         </div>
         <div class="contact-link-wrapper">
-            <a class="contact-link fa fa-github" aria-hidden="true" href="https://github.com/markopapic" target="_blank"></a>
+            <a class="contact-link fa fa-github" href="https://github.com/markopapic" target="_blank"></a>
         </div>
     </div>
     <div class="footer-copyright">&copy; <span class="footer-site-title">{{@blog.title}}</span> all rights reserved.</div>

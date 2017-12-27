@@ -19,6 +19,19 @@
     padding-top: 4vh;
 }
 
+.site-header .header-corner-buttons {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    padding: 1vh calc(15px + 1vw);
+    font-size: 1.5em;
+}
+
+.site-header .header-corner-buttons a:hover {
+    color: $highlight-color;
+}
+
 .blog-meta {
     margin-bottom: 4vh;
 }
@@ -147,5 +160,11 @@
     .nav .nav-menu-item {
         display: block;
         margin: 2vh 0;
+    }
+
+    .footer-contact .contact-link {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
     }
 }
