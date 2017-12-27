@@ -2506,7 +2506,7 @@ button, input[type="submit"] {
           box-sizing: border-box; }
 
 .site-header-background.with-cover .site-title {
-  text-shadow: 0 0 15px #3C3C3C; }
+  text-shadow: #000 2px 2px 4px; }
 
 .site-header-background.no-cover {
   padding-top: 4vh; }
@@ -2535,7 +2535,8 @@ button, input[type="submit"] {
   font-size: 2em; }
 
 .site-description {
-  color: #ccc; }
+  color: #ccc;
+  text-shadow: #000 2px 2px 4px; }
 
 .site-navigation {
   border-top: solid #494949 1px;

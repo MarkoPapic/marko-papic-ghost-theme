@@ -12,7 +12,7 @@
 }
 
 .site-header-background.with-cover .site-title {
-    text-shadow: 0 0 15px #3C3C3C;
+    text-shadow: #000 2px 2px 4px;
 }
 
 
@@ -50,6 +50,7 @@
 
 .site-description {
     color: #ccc;
+    text-shadow: #000 2px 2px 4px;
 }
 
 .site-navigation {
