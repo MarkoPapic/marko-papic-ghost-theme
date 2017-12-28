@@ -21,6 +21,7 @@
 .post-header-background {
     position: relative;
     height: calc(15vh + 3vw);
+    min-height: 150vh;
 }
 
 .post-header-background.with-image {

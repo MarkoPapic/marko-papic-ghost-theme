@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 35vh;
+    min-height: 200px;
     padding-top: 7vh;
     box-sizing: border-box;
 }
@@ -149,6 +150,8 @@
     color: $highlight-color;
 }
 
+/* Responsive
+------------------------------------------------------------------------*/
 @media screen and (max-width: $breakpoint-phone) {
     .site-header-background.with-cover {
         height: 25vh;
@@ -173,5 +176,13 @@
         display: inline-block;
         width: 20px;
         height: 20px;
+    }
+}
+
+/* image to use when screen width is more than double the height */
+@media screen and (max-aspect-ratio: 1/1) {
+    .site-header-background.with-cover {
+        background-size: auto 100%;
+        background-position-x: center;
     }
 }
