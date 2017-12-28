@@ -5,11 +5,11 @@
         </div>
     </header>
         <time class="published-date" pubdate="pubdate" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="D MMMM YYYY"}}</time>
-        <section class="post-excerpt">
+        <div class="post-excerpt">
             <p>{{excerpt words="70"}}
                 <a class="read-more" href="{{url}}">...</a>
             </p>
-        </section>
+        </div>
         <footer class="post-meta">
             {{#if tags}}
                 <ul class="post-tags-list">
