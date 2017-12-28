@@ -18,6 +18,7 @@
     color: #ddd;
     font-size: 1.3em;
     margin-bottom: calc(15px + 0.5vh);
+    font-weight: inherit;
 }
 
 .subscribe-form {
@@ -42,6 +43,7 @@
 .subscribe-form-inline .subscribe-input {
     font-size: 0.9em;
     margin: 0 1vw;
+    padding: calc(2px + .2vw);
 }
 
 .subscribe-form-inline .subscribe-btn {
