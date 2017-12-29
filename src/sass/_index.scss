@@ -58,7 +58,10 @@
 .site-navigation {
     border-top: solid #494949 1px;
     padding: calc(5px + 1vh) 4vw;
-    font-size: 0.9em;
+    font-size: 20px;
+    padding: 15px 0;
+    background-color: $primary-color;
+    z-index: 20;
 }
 
 .menu-button {
@@ -148,6 +151,18 @@
 
 .footer-contact .contact-link:hover {
     color: $highlight-color;
+}
+
+/* Sticky header
+------------------------------------------------------------------------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.after-sticky {
+    padding-top: 55px;
 }
 
 /* Responsive

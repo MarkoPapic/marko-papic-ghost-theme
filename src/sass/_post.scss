@@ -29,6 +29,12 @@
     background-size: 100% auto;
 }
 
+.post-template .site-navigation {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
 .post-full .post-title {
     position: absolute;
     bottom: 0;

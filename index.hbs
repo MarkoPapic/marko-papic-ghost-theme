@@ -13,7 +13,7 @@
             <div class="site-description">{{@blog.description}}</div>
         </div>
     </div>
-    <nav class="site-navigation">
+    <nav id="sticky-nav" class="site-navigation">
     {{#if @blog.navigation}}
         <button id="navigation-menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><div class="hamburger-button"><div></div><div></div><div></div></div></button>
     {{/if}}
@@ -21,7 +21,7 @@
   </nav>
 </header>
 
-<main>
+<main id="after-sticky-nav">
     <div class="post-feed">
         {{#foreach posts}}
             {{> "post-card"}}
@@ -65,3 +65,7 @@
     </div>
     <div class="footer-copyright">&copy; <span class="footer-site-title">{{@blog.title}}</span> all rights reserved.</div>
 </footer>
+
+{{#contentFor "scripts"}}
+    <script src="{{asset "js/sticky-navigation.js"}}"></script>
+{{/contentFor}}
