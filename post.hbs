@@ -8,6 +8,9 @@
             <button id="navigation-menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation"><div class="hamburger-button"><div></div><div></div><div></div></div></button>
         {{/if}}
         {{navigation}}
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
     </nav>
 </header>
 <main>
@@ -80,6 +83,7 @@
 {{/post}}
 
 {{#contentFor "scripts"}}
+    <script src="{{asset "js/post-progress-bar.js"}}"></script>
     <script src="{{asset "js/highlight.min.js"}}"></script>
     <script>hljs.initHighlightingOnLoad();</script> 
 {{/contentFor}}

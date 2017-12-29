@@ -17,4 +17,5 @@ var stickyNavigation = (function () {
     };
 
     window.addEventListener("scroll", makeSticky);
+    
 })();

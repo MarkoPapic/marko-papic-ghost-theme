@@ -21,7 +21,7 @@
 .post-header-background {
     position: relative;
     height: calc(15vh + 3vw);
-    min-height: 150vh;
+    min-height: 150px;
 }
 
 .post-header-background.with-image {
@@ -32,7 +32,8 @@
 .post-template .site-navigation {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    padding-bottom: 18px;
 }
 
 .post-full .post-title {
@@ -231,6 +232,20 @@
     font-style: italic;
 }
 
+/* Progress bar
+------------------------------------------------------------------------*/
+.progress-container {
+    width: 100%;
+    height: 4px;
+}
+
+.progress-bar {
+    height: 4px;
+    background: $accent-color;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+}
 
 /* Responsive
 ------------------------------------------------------------------------*/
