@@ -2539,7 +2539,10 @@ button, input[type="submit"] {
 .site-navigation {
   border-top: solid #494949 1px;
   padding: calc(5px + 1vh) 4vw;
-  font-size: 0.9em; }
+  font-size: 20px;
+  padding: 15px 0;
+  background-color: #3d3d3d;
+  z-index: 20; }
 
 .menu-button {
   background-color: inherit;
@@ -2623,6 +2626,16 @@ button, input[type="submit"] {
 .footer-contact .contact-link:hover {
   color: #fff; }
 
+/* Sticky header
+------------------------------------------------------------------------*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.after-sticky {
+  padding-top: 55px; }
+
 /* Responsive
 ------------------------------------------------------------------------*/
 @media screen and (max-width: 420px) {
@@ -2663,11 +2676,17 @@ button, input[type="submit"] {
 
 .post-header-background {
   position: relative;
-  height: calc(15vh + 3vw); }
+  height: calc(15vh + 3vw);
+  min-height: 150vh; }
 
 .post-header-background.with-image {
   height: calc(15vw + 15vh);
   background-size: 100% auto; }
+
+.post-template .site-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 .post-full .post-title {
   position: absolute;
