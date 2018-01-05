@@ -2867,7 +2867,9 @@ button, input[type="submit"] {
 .progress-bar {
   height: 4px;
   background: #22b3eb;
-  width: 0%; }
+  width: 0%;
+  position: absolute;
+  bottom: 0; }
 
 /* Responsive
 ------------------------------------------------------------------------*/

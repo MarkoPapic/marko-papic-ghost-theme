@@ -2,9 +2,13 @@
 
 var stickyNavigation = (function () {
 
-    var stickyNavigation = document.getElementById("sticky-nav");
-    var elementFollowingSticky = document.getElementById("after-sticky-nav");
-    var stickyOffset = stickyNavigation.offsetTop;
+    var stickyNavigation, elementFollowingSticky, stickyOffset;
+
+    var setup = function() {
+        stickyNavigation = document.getElementById("sticky-nav");
+        elementFollowingSticky = document.getElementById("after-sticky-nav");
+        stickyOffset = stickyNavigation.offsetTop;
+    }
 
     var makeSticky = function () {
         if (window.pageYOffset >= stickyOffset) {
@@ -16,6 +20,8 @@ var stickyNavigation = (function () {
         }
     };
 
+    setup();
     window.addEventListener("scroll", makeSticky);
+    window.addEventListener("resize", setup);
     
 })();
