@@ -2641,12 +2641,6 @@ button, input[type="submit"] {
 
 /* Responsive
 ------------------------------------------------------------------------*/
-/*@media screen and (max-aspect-ratio: 3/2) {
-    .site-header-background.with-cover {
-        background-size: auto 100%;
-        background-position-x: center;
-    }
-}*/
 @media screen and (max-width: 420px) {
   .site-header-background.with-cover {
     height: 25vh; }
