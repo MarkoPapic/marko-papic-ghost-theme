@@ -2757,6 +2757,10 @@ button, input[type="submit"] {
   white-space: nowrap;
   margin: 1vh calc(10px + 2vw); }
 
+.post-comments {
+  border-top: solid #ccc 2px;
+  margin: 0 1vw; }
+
 /* Blog post content (rendered from Markdown)
 ------------------------------------------------------------------------*/
 .post-content {
