@@ -1,3 +1,3 @@
 node_modules/
 package/
-sass/transpiled
+src/sass/transpiled/main.css
