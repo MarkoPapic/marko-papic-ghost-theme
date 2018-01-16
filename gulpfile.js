@@ -6,7 +6,8 @@ var gulp = require("gulp"),
     sass = require("gulp-sass"),
     autoprefixer = require("gulp-autoprefixer"),
     cssmin = require("gulp-cssmin"),
-    uglify = require("gulp-uglify");
+	uglify = require("gulp-uglify"),
+	zip = require("gulp-zip");
 
 var paths = {
     root: "./"
@@ -18,6 +19,7 @@ paths.css = paths.root + "src/sass/transpiled/main.css";
 paths.js = paths.root + "src/js/**/*.js";
 paths.sass = paths.root + "src/sass/**/*.scss"
 paths.sassDest = paths.root + "src/sass/transpiled";
+paths.packageDest = paths.root + "package";
 
 gulp.task("clean:sass", function (cb) {
     rimraf(paths.css, cb);
@@ -29,6 +31,10 @@ gulp.task("clean:css", function (cb) {
 
 gulp.task("clean:js", function (cb) {
 	rimraf(paths.jsDest + "/*", cb);
+});
+
+gulp.task("clean:package", function (cb) {
+	rimraf(paths.packageDest + "/*", cb);
 });
 
 gulp.task("sass", function () {
@@ -50,5 +56,12 @@ gulp.task("min:js", function () {
 		.pipe(gulp.dest(paths.jsDest));
 });
 
+gulp.task("create:package", function () {
+	return gulp.src(["./**", "!gulpfile.js", "!.gitignore", "!./.git", "!package-lock.json", "!node_modules", "!node_modules/**", "!src", "!src/**", "!package", "!package/**"])
+		.pipe(zip("marko-papic.zip"))
+		.pipe(gulp.dest(paths.packageDest));
+});
+
 gulp.task("clean", ["clean:sass", "clean:css", "clean:js"]);
 gulp.task("build", ["min:css", "min:js"])
+gulp.task("package", ["clean:package", "create:package"])
