@@ -22,6 +22,5 @@ var stickyNavigation = (function () {
 
     setup();
     window.addEventListener("scroll", makeSticky);
-    window.addEventListener("resize", setup);
-    
+        
 })();
