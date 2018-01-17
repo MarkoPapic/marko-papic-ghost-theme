@@ -195,3 +195,11 @@
         height: 20px;
     }
 }
+
+/* Compatibility
+------------------------------------------------------------------------*/
+@supports (-ms-ime-align:auto) {
+    .post-feed {
+        justify-content: space-around;
+    }
+}

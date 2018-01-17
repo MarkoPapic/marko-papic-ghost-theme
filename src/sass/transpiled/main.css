@@ -2658,6 +2658,13 @@ button, input[type="submit"] {
     width: 20px;
     height: 20px; } }
 
+/* Compatibility
+------------------------------------------------------------------------*/
+@supports (-ms-ime-align: auto) {
+  .post-feed {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
 .post-template .site-header {
   padding-top: 0; }
 
