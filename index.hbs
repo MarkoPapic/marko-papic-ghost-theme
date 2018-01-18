@@ -30,6 +30,7 @@
     {{pagination}}
 </main>
 
+<!-- Uncomment this when Ghost fully implements the Subscribers feature. Make sure you remove MailChimp ones -->
 {{#if @labs.subscribers}}
     <section class="subscribe-section-inline">
         <h3>Subscribe to Newsletter</h3>
@@ -41,6 +42,7 @@
         }}
     </section>
 {{/if}}
+<!-- end -->
 
 {{#contentFor "scripts"}}
     <script src="{{asset "js/sticky-navigation.js"}}"></script>

@@ -1,0 +1,58 @@
+.page-newsletter .subscription-form {
+    width: calc(200px + 20vw);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.page-newsletter .subscription-form .mc-field-group {
+    padding-bottom: 20px;
+}
+
+.page-newsletter .subscription-form .mc-field-group > * {
+    display: block;
+}
+
+.page-newsletter .subscription-form .mc-field-group > label {
+    margin-bottom: 3px;
+}
+
+.page-newsletter .subscription-form .mc-field-group > input {
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+}
+
+.page-newsletter .subscription-form .input-group {
+    text-align: center;
+}
+
+.page-newsletter .subscription-form .input-group > label {
+    font-weight: bold;
+}
+
+.page-newsletter .subscription-form .input-group ul {
+    list-style-type: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.page-newsletter .subscription-form .input-group ul li {
+    display: inline-block;
+}
+
+.page-newsletter .subscription-form .submit-field-group {
+    text-align: center;
+}
+
+.page-newsletter .subscription-form .btn {
+    background-color: $accent-color;
+}
+
+/* Responsive
+------------------------------------------------------------------------*/
+@media screen and (max-width: $breakpoint-tablet) {
+	.page-newsletter .subscription-form {
+        width: 95%;
+    }
+}

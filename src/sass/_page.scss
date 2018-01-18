@@ -136,3 +136,11 @@
 .page-content blockquote p {
     font-style: italic;
 }
+
+/* Responsive
+------------------------------------------------------------------------*/
+@media screen and (max-width: $breakpoint-tablet) {
+	.page-full {
+        width: 100%;
+    }
+}
