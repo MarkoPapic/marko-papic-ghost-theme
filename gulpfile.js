@@ -56,7 +56,7 @@ gulp.task("min:js", function () {
 		.pipe(gulp.dest(paths.jsDest));
 });
 
-gulp.task("create:package", function () {
+gulp.task("create:package", ["clean:package"], function () {
 	return gulp.src(["./**", "!gulpfile.js", "!.gitignore", "!./.git", "!package-lock.json", "!node_modules", "!node_modules/**", "!src", "!src/**", "!package", "!package/**"])
 		.pipe(zip("marko-papic.zip"))
 		.pipe(gulp.dest(paths.packageDest));
@@ -64,4 +64,4 @@ gulp.task("create:package", function () {
 
 gulp.task("clean", ["clean:sass", "clean:css", "clean:js"]);
 gulp.task("build", ["min:css", "min:js"])
-gulp.task("package", ["clean:package", "create:package"])
+gulp.task("package", ["create:package"])
