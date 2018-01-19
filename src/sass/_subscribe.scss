@@ -1,3 +1,4 @@
+
 .subscribe-section {
     text-align: center;
     margin-top: 20vh;
@@ -11,7 +12,12 @@
 
 .subscribe-section-inline {
     text-align: center;
-    padding: 3vh 2vw;
+    background-color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vh 0;
+    margin-bottom: 2vh;
 }
 
 .subscribe-section-inline h3 {
@@ -56,4 +62,45 @@
 
 .subscribe-back-btn:hover {
     color: $highlight-color;
+}
+
+/* Floating subscribe
+------------------------------------------------------------------------*/
+#floating-subscribe {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px 0;
+    color: #22b3eb;
+    background-color: rgba(0,0,0,.6);
+    width: 200px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top: 1px solid rgba(34,179,235,.2);
+    border-left: 1px solid rgba(34,179,235,.2);
+}
+
+#floating-subscribe .floating-subscribe-text {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#floating-subscribe #close-floating-message {
+    font-size: 0.6em;
+    float: right;
+    padding-right: 10px;
+}
+
+/* Responsive
+------------------------------------------------------------------------*/
+@media screen and (max-width: $breakpoint-tablet) {
+	.subscribe-section-inline {
+        width: 100%;
+    }
+
+    #floating-subscribe {
+        padding: 10px 0;
+        width: 180px;
+    }
 }

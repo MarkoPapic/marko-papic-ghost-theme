@@ -1,0 +1,67 @@
+.subscribe-section-inline .subscription-form-mc {
+}
+
+.subscribe-section-inline ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.subscribe-section-inline h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.subscribe-section-inline .subscription-form-mc .mc-field-group {
+    padding-bottom: 15px;
+}
+
+.subscribe-section-inline .subscription-form-mc .mc-field-group input[type="email"]
+{
+    text-indent: 2%;
+}
+
+.subscribe-section-inline .subscription-form-mc .mc-field-group input[type="email"]
+{
+    font-size: 0.8em;
+    width: 300px;
+}
+
+.subscribe-section-inline .subscription-form-mc .input-group {
+    text-align: center;
+}
+
+.subscribe-section-inline .subscription-form-mc .input-group > label {
+    font-weight: bold;
+}
+
+.subscribe-section-inline .subscription-form-mc .input-group ul li {
+    display: inline-block;
+}
+
+.subscribe-section-inline .subscription-form-mc .submit-field-group {
+    padding-top: 5px;
+}
+
+.subscribe-section-inline .subscription-form-mc .submit-field-group .btn {
+    color: #fff;
+    background-color: $accent-color;
+    font-size: 0.8em;
+}
+
+.subscribe-section-inline .subscription-form-mc .submit-field-group .btn:hover {
+    color: $highlight-color;
+}
+
+/* Responsive
+------------------------------------------------------------------------*/
+@media screen and (max-width: $breakpoint-tablet) {
+	.subscribe-section-inline .subscription-form-mc .mc-field-group {
+        padding-bottom: 5px;
+    }
+
+    .subscribe-section-inline h2 {
+        margin-bottom: 5px;
+    }
+}
