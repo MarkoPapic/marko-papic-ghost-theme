@@ -1,7 +1,7 @@
 {
     "name": "marko-papic",
     "description": "Theme used for Marko Papic blog.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=1.17.0"
     },
