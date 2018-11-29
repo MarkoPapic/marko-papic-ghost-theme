@@ -1,7 +1,7 @@
 {
     "name": "marko-papic",
     "description": "Theme used for Marko Papic blog.",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "engines": {
         "ghost": ">=1.17.0"
     },
@@ -25,8 +25,7 @@
         "mobile": "assets/screenshot-mobile.jpg"
     },
     "keywords": [
-        "ghost",
-        "theme"
+        "ghost-theme"
     ],
     "repository": {
         "type": "git",

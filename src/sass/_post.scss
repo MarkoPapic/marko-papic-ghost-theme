@@ -178,6 +178,47 @@
     margin: calc(5px + 3vh) auto;
 }
 
+.kg-image-card {}
+
+.kg-image {}
+
+.kg-embed-card {}
+
+.kg-width-wide {
+    width: 100%;
+}
+
+.kg-width-full {
+    position: relative;
+    /*-5vw is the padding of the .post-content*/
+    margin-left: -5vw;
+    margin-right: -5vw;
+}
+
+.post-content figure {}
+
+.post-content figcaption {
+    text-align: center;
+}
+
+.kg-gallery-card {}
+
+.kg-gallery-container {
+    display: block;
+    margin: 30px 0;
+}
+
+.kg-gallery-row {
+    display: block;
+    margin: 10px 0;
+}
+
+.kg-gallery-image {
+    display: inline-block;
+}
+
+.kg-gallery-image {}
+
 .post-content video, audio, iframe {
     max-width: 100%;
     margin-top: calc(5px + 3vh);
