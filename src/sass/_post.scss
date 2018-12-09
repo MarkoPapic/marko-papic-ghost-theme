@@ -8,7 +8,7 @@
 
 .post-full {
     background-color: $post-background-color;
-    width: 80%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: calc(5vh + 2vw);
@@ -178,17 +178,22 @@
     margin: calc(5px + 3vh) auto;
 }
 
-.kg-image-card {}
-
 .kg-image {}
 
 .kg-embed-card {}
 
-.kg-width-wide {
-    width: 100%;
+.kg-image-card {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.kg-width-full {
+.kg-image-card.kg-width-wide {
+    max-width: 100%;
+}
+
+.kg-image-card.kg-width-full {
+    max-width: none;
     position: relative;
     /*-5vw is the padding of the .post-content*/
     margin-left: -5vw;
@@ -293,12 +298,4 @@
     width: 0%;
     position: absolute;
     bottom: 0;
-}
-
-/* Responsive
-------------------------------------------------------------------------*/
-@media screen and (max-width: $breakpoint-tablet) {
-	.post-full {
-        width: 100%;
-    }
 }
