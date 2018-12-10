@@ -175,7 +175,7 @@
 .post-content img {
     display: block;
     max-width: 100%;
-    margin: calc(5px + 3vh) auto;
+    margin: 0 auto;
 }
 
 .kg-image {}
@@ -184,8 +184,7 @@
 
 .kg-image-card {
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3vh auto;
 }
 
 .kg-image-card.kg-width-wide {
@@ -204,6 +203,7 @@
 
 .post-content figcaption {
     text-align: center;
+    font-size: 0.8em;
 }
 
 .kg-gallery-card {}
